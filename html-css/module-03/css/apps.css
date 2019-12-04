@@ -12,52 +12,55 @@ html {
 }
 
 .page-header  { 
-    width: 900px;
-    height: 192px;
+    
     text-align: center;
-    padding: 77px 0;
+    padding: 0;  
+    margin: 77px 0 104px 0;
   }
   
 .site-navigation {
-
+    text-align: center;
     font-size: 0;
     list-style: none;
 }
 
 .site-navigation li {
-    display:inline-block;
-    margin-right: 0 48px;0
-    vertical-align: middle;
+    display: inline-block;
+    margin-right: 48px;
 }
 
 
 .site-navigation li:not(:last-child) {
     margin-right: 60px;
 }
+
 a {
+    text-transform: uppercase;
+    line-height: 1.7;
     text-decoration: none;
     font-size: 14px;
     font-family:'Playfair Display', arial;
     color:#626262;
 }
+
 a:hover {
     color: #03a9f4;
 }
 
+
+.section-box {
+    padding-bottom: 58px;
+}
 .box-text img {
     margin-bottom: 32px;
     
 }
 
-
-section {
-    padding-bottom: 58px;
-}
 .box-text {
     width: 420px;
     display: inline-block;
     margin-bottom: 132px;
-    margin-right: 56px;   
+    margin-right: calc(60px - 4px);   
     text-align: left;
 }
 .box-text:nth-child(2n) {
@@ -71,6 +74,7 @@ section {
 
 
 .text1 { 
+    margin: 0;
     font-size: 14px;
     color: #626262;
     font-weight: 400px;
@@ -95,7 +99,7 @@ h2 {
 
 .buttn {
     text-align: center;
-    margin-bottom: 70px;
+    margin-top: 54px;
 }
 .button-more {
     width: 164px;
