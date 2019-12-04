@@ -1,87 +1,117 @@
-*{
-    margin: 0;
-    padding: 0;
+html {
     box-sizing: border-box;
 }
+ *{
+   box-sizing:inherit; 
+}
+
 
 .conteiner {
     width: 900px;
+    margin: 0 auto;
 }
 
-header  {
-    margin: 75px 220px;
+.page-header  { 
+    width: 900px;
+    height: 192px;
     text-align: center;
+    padding: 77px 0;
   }
   
+.site-navigation {
 
-
-li {
-    display:inline-block;
-    margin: 0 48px;
+    font-size: 0;
+    list-style: none;
 }
 
+.site-navigation li {
+    display:inline-block;
+    margin-right: 0 48px;0
+    vertical-align: middle;
+}
+
+
+.site-navigation li:not(:last-child) {
+    margin-right: 60px;
+}
 a {
     text-decoration: none;
     font-size: 14px;
-    font-family: "Playfair Display";
+    font-family:'Playfair Display Bold', arial;
     color:#626262;
 }
 a:hover {
     color: #03a9f4;
 }
 
+.box-text img {
+    margin-bottom: 32px;
+    
+}
 
 
 section {
-    margin:190px 150px;
-    text-align: center;
+    padding-bottom: 58px;
 }
-article {
+.box-text {
     width: 420px;
-    height: 420px;
     display: inline-block;
-    margin-bottom: 160px;
-    margin-right: 40px;
-    font-family: 'Times New Roman', Times, serif;
-    
-    
+    margin-bottom: 132px;
+    margin-right: 56px;   
+    text-align: left;
+}
+.box-text:nth-child(2n) {
+    margin-right: 0;
+
+}
+.box-text:nth-child(5),
+.box-text:nth-child(6) {
+    margin-bottom: 0;
 }
 
-p {
-    text-align: left;
-    margin: 0;
-    color: #626262;
- }
 
-p.optical {
-    opacity: 0.5;
-    margin: 15px 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.text1 { 
+    font-size: 14px;
+    color: #626262;
+    font-weight: 400px;
+    font-family: 'playfair-display Bold', arial;;
+    line-height: 24px; 
+}
+
+p.optical {   
+    margin: 0;
+    margin-bottom: 28px;
+    font-family: 'Ubuntu';
     color: #b4ad9e;
     font-size: 14px;
 }
 h2 {
-    text-align: left;
-    margin: 20px 0; 
-    font-family:BlinkMacSystemFont;
+    margin: 0;
+    margin-bottom: 39; 
+    font-family: 'Playfair Display Bold', arial;
     color:#626262;
     font-size: 30px;
 } 
 
-
-
-button {
+.buttn {
+    text-align: center;
+    margin-bottom: 70px;
+}
+.button-more {
     width: 164px;
-    height: 62px;
+    height: 60px;
     display: inline-block;
     font-size: 24px;
-    margin: 50px 70px;
-    padding: 15px;
+    padding: ;
     text-align: center;
     background-color: white;
     border: 1px solid #626262;
     color:rgba(128, 128, 128, 0.397);
 }
-button:hover {
+.button-more:hover {
     color: grey;
+}
+.button-more:focus {
+    outline: none;
+}
     
