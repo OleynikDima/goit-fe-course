@@ -5,20 +5,24 @@ html {
    box-sizing:inherit; 
 }
 
-
-.conteiner {
+body {
+    margin: 0;
+}
+.container {
     width: 900px;
     margin: 0 auto;
 }
 
 .page-header  { 
-    
     text-align: center;
-    padding: 0;  
-    margin: 77px 0 104px 0;
-  }
-  
-.site-navigation {
+    padding: 76px 0;  
+}  
+
+.section-box {
+    font-size:0;
+}
+.site-navigation    {
+    padding: 0;
     text-align: center;
     font-size: 0;
     list-style: none;
@@ -26,7 +30,7 @@ html {
 
 .site-navigation li {
     display: inline-block;
-    margin-right: 48px;
+    margin-right: 0;
 }
 
 
@@ -34,8 +38,7 @@ html {
     margin-right: 60px;
 }
 
-a {
-    text-transform: uppercase;
+a { display: block;
     line-height: 1.7;
     text-decoration: none;
     font-size: 14px;
@@ -57,19 +60,16 @@ a:hover {
 }
 
 .box-text {
+    font-size: 0;
     width: 420px;
     display: inline-block;
     margin-bottom: 132px;
-    margin-right: calc(60px - 4px);   
+    margin-right:60px;   
     text-align: left;
 }
 .box-text:nth-child(2n) {
     margin-right: 0;
 
-}
-.box-text:nth-child(5),
-.box-text:nth-child(6) {
-    margin-bottom: 0;
 }
 
 
@@ -97,23 +97,22 @@ h2 {
     font-size: 28px;
 } 
 
-.buttn {
-    text-align: center;
-    margin-top: 54px;
-}
+
 .button-more {
+    display: block;
+    margin: auto;
     width: 164px;
     height: 60px;
-    display: inline-block;
     font-size: 24px;
     font-family:'Playfair Display', arial ;
-    text-align: center;
     background-color: white;
-    border: 1px solid #626262;
+    border: 1px solid  #626262;
     color:rgba(128, 128, 128, 0.397);
 }
+
 .button-more:hover {
     color: grey;
+    
 }
 .button-more:focus {
     outline: none;
