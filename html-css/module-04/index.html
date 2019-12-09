@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Module-04</title>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/63f7c4ed344e79ed1cf58a1817e6ff0d?family=Myriad+Pro" rel="stylesheet" type="text/css"/>
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body> 
@@ -19,7 +21,7 @@
             <!-- Лого сайта -->
             <a href="#" class="logo"><img src="images/Logo-mart.jpg" alt="Mart" width="78" height="21"></a>
             <!-- навигация меню с правой стороны -->
-                    <ul class="home-navigation">
+                    <ul class="home-navigation clearfix">
                         <li><a href="#">HOME</a></li>
                         <li><a href="#">ABOUT US</a></li>
                         <li><a href="#">PAGE</a></li>
@@ -29,34 +31,108 @@
                     </ul>
             </nav>       
         </header>
-        <!-- перечень продукции -->
+        
         <main class="container"> 
+        <!-- FEATURED PRODUCTS -->
             <section class="section-product-featured">
                     <h1 class="Chapter-1">  FEATURED PRODUCTS   </h1>
-                        <hr class="line">
-
-                    <ul class="nav-section-product">
-                        <li class="pro-items"><a href="#"> Blue Tshirt</a></li>
-                        <li class="pro-items">WOMAN shirt</li>
-                        <li class="pro-items">YELLOW Tshirt</li>
-                        <li class="pro-items">Cool lingerie</li>
-                        <li class="pro-items">Blue Tshirt</li>
-                        <li class="pro-items">WOMAN shirt</li>
-                        <li class="pro-items">YELLOW Tshirt</li>
-                        <li class="pro-items">Cool lingerie</li>
+                    <ul class="featured-block-menu clearfix">
+                            <li class="featured-block-items woman-shoes">
+                                 <a href="#">    
+                                    <ul class="container-item clearfix">
+                                        <li class="name-product"><p>Blue Tshirt</p></li>
+                                        <li class="price"> <p>$26</p></li>
+                                    </ul>
+                                </a>
+                            </li>
+                             <li class="featured-block-items shirt">
+                                <a href="#">
+                                    <ul class="container-item clearfix">
+                                        <li class="name-product"><p>WOMAN shirt</p></li>
+                                        <li class="price"><p>$31</p></li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="featured-block-items hat">
+                                <a href="#">
+                                    <ul class="container-item clearfix">
+                                        <li class="name-product"><p>YELLOW Tshirt</p></li>
+                                        <li class="price"><p>$21</p></li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="featured-block-items blue-bag">
+                                <a href="#">
+                                    <ul class="container-item clearfix">
+                                        <li class="name-product"><p>Cool lingerie</p></li>
+                                        <li class="price"><p>$56</p></li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="featured-block-items black-bag">
+                                <a href="#">
+                                    <ul class="container-item clearfix">
+                                        <li class="name-product"><p>Blue Tshirt</p></li>
+                                        <li class="price"><p>$26</p></li>   
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="featured-block-items belt">
+                                <a href="#">
+                                    <ul class="container-item clearfix">
+                                        <li class="name-product"><p>WOMAN shirt</p></li>
+                                        <li class="price"><p>$31</p></li>   
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="featured-block-items man-shoes">
+                                <a href="#">
+                                    <ul class="container-item clearfix">
+                                        <li class="name-product"><p>YELLOW Tshirt</p></li>
+                                        <li class="price"><p>$21</p></li>   
+                                    </ul>
+                                </a>
+                            </li>   
+                            <li class="featured-block-items glasses">
+                                <a href="#">
+                                    <ul class="container-item clearfix">
+                                        <li class="name-product"><p>Cool lingerie</p></li>
+                                        <li class="price"><p>$56</p></li>   
+                                    </ul>
+                                </a>
+                            </li>
                     </ul>
+             </section>   
+        <!-- LATEST NEWS -->
+             <section class="section-latestnews">
+                        <h1 class="Chapter-1">LATEST NEWS</h1>
 
-            </section>    
-
-            <section class="section-latesnews">
-                <h1 class="Chapter-1">LATEST NEWS</h1>
-                    <hr class="line">
-                        <article></article>
-                        <article></article>
-                        <article></article>
+                        <ul class="latestsnews-container clearfix">
+                            <li class="latestnews-box">
+                                <img src="images/ipad.png" alt="ipad" width="350" height="261">
+                                <p class="latestnews-title">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean </p>
+                                <p class="latestnews-text">Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt  </p>
+                                
+                                <button class="latestnews-button"> Read More </button>
+                            </li>
+                            <li class="latestnews-box">
+                                <img src="images/2-woman.png" alt="2-woman" width="350" height="261"> 
+                                <p class="latestnews-title">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean </p>
+                                <p class="latestnews-text">Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt  </p>
+                                    
+                                <button class="latestnews-button"> Read More </button>
+                            </li>
+                            <li class="latestnews-box">
+                                <img src="images/white-bus.png" alt="white-bus" width="350" height="261">
+                                <p class="latestnews-title">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean </p>
+                                <p class="latestnews-text">Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt  </p>
+                                       
+                                <button class="latestnews-button"> Read More </button>
+                            </li>
+                        </ul>
 
                 
-            </section>            
+             </section>            
             
         </main>
 
