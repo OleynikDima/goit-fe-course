@@ -162,28 +162,28 @@ body {
 }
 /*-----------------product img------------------------*/
 .woman-shoes::before {
-    background-image: url(/images/product1.png);
+    background-image: url('../images/product1.png');
 }
 .shirt::before {
-    background-image: url(/images/product2.png);
+    background-image: url('../images/product2.png');
 }
 .hat::before {
-    background-image: url(/images/product3.png);
+    background-image: url('../images/product3.png');
 }
 .blue-bag::before {
-    background-image: url(/images/product4.png);
+    background-image: url('../images/product4.png');
 }
 .black-bag::before {
-    background-image: url(/images/product5.png);
+    background-image: url('../images/product5.png');
 }
 .belt::before {
-    background-image: url(/images/product6.png);
+    background-image: url('../images/product6.png');
 }
 .man-shoes::before {
-    background-image: url(/images/product7.png);
+    background-image: url('../images/product7.png');
 }
 .glasses::before {
-    background-image: url(/images/product8.png);
+    background-image: url('../images/product8.png');
 }
 
 
