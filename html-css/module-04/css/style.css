@@ -96,7 +96,7 @@ body {
     margin-bottom: 131px;
     color: #515151;
     font-size: 48px;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     text-align: center;  
 }
@@ -136,9 +136,6 @@ body {
 
 .featured-block-items {
     float: left;
-    background-color:#e9f0fd;
-    width: 255px;
-    height: 322px;
     margin-right: 30px;
     margin-bottom: 30px;
     
