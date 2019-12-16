@@ -143,6 +143,9 @@ body {
 
 .featured-block-menu li:nth-child(4n) {
     margin-right: 0;
+
+}
+.featured-block-menu li:nth-child(n + 4){
     margin-bottom: 0;
 }
 
