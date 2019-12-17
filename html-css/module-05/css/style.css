@@ -25,23 +25,23 @@ body{
 
 
 .site-header{
-    width: 1600px;
     font-size: 0;
-    margin: 0 auto;
+
 }
 
 .site-navigation {
     width: 1110px;
+    height: 20px;
     font-size: 0;
     margin: 0 auto;
-    padding: 38px 0 32px;
+    padding: 40px 0 30px;    
 }
 
 .logo {
     width: 82px;
     height: 24px;
     vertical-align: middle;
-    display: inline-block;
+    float: left;
     margin: 0;
     margin-right: 564px;
 }
@@ -59,13 +59,12 @@ body{
 }
 
 .navigation-item {
-    vertical-align: middle;
+    display: block;
     margin: 0;
-    display: inline-block;
     list-style: none;
 }
 .navigation-item li{
-    display: inline-block;
+    float: left;
 }
 .navigation-item li:not(:last-child) {
     margin-right: 30px;
@@ -82,16 +81,19 @@ body{
 
 
 main{
-    width: 1600px;
-    margin: 0 auto;
+   
 }
 .section-slider{
-    position: relative;
     margin: 0 auto;
-    height: 600px;
+    
 
 }
 
+.slider-box{
+    position: relative;
+    margin: 0 auto;
+    width: 1110px;
+}
 .sliders {
     margin: 0;
     padding: 0;
@@ -100,10 +102,10 @@ main{
 
 
 
-.paris-tour img{
-    width: 100%;
+.section-slider img{
+    margin: 0 auto;
+    width: 1600px;
     height: 600px;
-    object-fit: cover;
     display: block;
 } 
 
@@ -117,9 +119,10 @@ main{
 
 
 .button-slired{
-    transform: translateY(-50%);
-    top: 50%;
     position: absolute;
+    bottom: 250px;
+
+
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -134,11 +137,11 @@ main{
 
 .ctrl-prev{
     background-image: url('../images/icon/Arrow-prev.png');
-    left: 245px;
+    left: 0;
 }
 .ctrl-next{
     background-image: url('../images/icon/Arrow.png');
-    right: 245px;
+    right: 0;
 }
 
 .button-slired:hover {
@@ -162,7 +165,7 @@ main{
     padding: 0;
     position: absolute;
     bottom: 283px;
-    left: 420px;
+    left: 180px;
 }
 
 .paris-text h2{
@@ -189,9 +192,9 @@ main{
 .section-new-collection {
     background-color: #e9f0fd;
     margin: 0 auto;
-    padding: 0 auto;
-    padding-top: 100px;
-    height: 675px;
+
+    
+
 }
 
 /*-------------Chapter --------*/
@@ -202,7 +205,7 @@ main{
 
 
 .chapter-1{
-    margin: 0;
+    padding-top: 101px;
     margin-bottom: 82px;
     color: #515151;
     font-size: 48px;
@@ -224,10 +227,11 @@ main{
 
 
 
-
-
 .collection-block {
-    padding: 0 245px;
+    height:322px ;
+    width: 1110px;
+    margin: 0 auto;
+    padding-bottom: 100px;
 }
 
 .collection-shirt {
@@ -279,16 +283,16 @@ main{
 
 
 
-.icon-items a{
+.icon-items button{
     margin-right: 6px;
     float: left;
     position: relative;
     
 }
-.icon-items a:nth-child(3){
+.icon-items button:nth-child(3){
     margin-right: 0;
 }
-.icon-items a:nth-child(4){
+.icon-items button:nth-child(4){
     margin: 0;
 }
 
@@ -300,7 +304,8 @@ main{
         height: 50px;
         border: 1px solid #fff;
         margin-bottom: 7px;     
-
+        background-image: none;
+        background-color: transparent;
         background-repeat: no-repeat;
         background-position: center;
         
@@ -308,21 +313,23 @@ main{
 }
 
 .overlay-icon:hover{
+    border: none;
     background-color: #1abc9c; 
     transition: 0.5s;
 }
 
 .like {
-    background-image: url('../images/icon/like.png');
-    
+    background-image: url('../images/icon/like.png');    
 }
 
 .compare{
     background-image: url('../images/icon/compare.png');    
 }
+
 .history{
     background-image: url('../images/icon/history.png');
 }
+
 .buy{
     position: relative;
     background-image: url('../images/icon/buy.png');
@@ -430,8 +437,6 @@ main{
 
 .footer-page{
     margin: auto;
-    width: 1600px;
-    height: 88px;
     background-color: #323232;;
 }
 
