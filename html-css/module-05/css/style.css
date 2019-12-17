@@ -29,23 +29,36 @@ body{
 
 }
 
-.site-navigation {
+.site-navigation {  
     width: 1110px;
-    height: 20px;
+    height: 28px;
     font-size: 0;
     margin: 0 auto;
     padding: 40px 0 30px;    
 }
 
+
 .logo {
-    width: 82px;
-    height: 24px;
-    vertical-align: middle;
+    text-decoration: none;
+    margin-right: 544px;
     float: left;
-    margin: 0;
-    margin-right: 564px;
+    
 }
+.logo h2{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    line-height: 28px;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.logo::first-letter {
+    font-weight: 900;
+    color:#29bea0;
+}
+
 .navigation-item a{
+    display: block;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
@@ -59,7 +72,8 @@ body{
 }
 
 .navigation-item {
-    display: block;
+    padding-top: 5px;
+    float: right;
     margin: 0;
     list-style: none;
 }
@@ -76,17 +90,8 @@ body{
 
 
 
-
-
-
-
-main{
-   
-}
 .section-slider{
     margin: 0 auto;
-    
-
 }
 
 .slider-box{
