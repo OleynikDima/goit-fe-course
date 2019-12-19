@@ -1,0 +1,386 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*------------Header ---------------------*/
+.header-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.site-navigation {
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+/*--------------Logo-----------------------*/
+.logo {
+    text-decoration: none;
+}
+.logo h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #95e1d3;   
+}
+
+/*-------------Navigation------------*/
+.navigation-box{
+    display: flex;
+    justify-content: space-between;
+    width: 491px;
+}
+
+.navigation-item {
+    list-style: none;
+    position: relative;
+}
+
+
+
+
+.link-item {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #95e1d3;
+    transition: 200ms;
+}
+
+.link-item:hover {
+    color: #f38181;
+}
+
+.link-item::after {
+    content: '';
+    display: table;
+    clear: both;
+
+    position: absolute;
+    top: 150%;
+    right: 0;
+     
+    width: 0;
+    height: 3px;
+    background-color: #f38181;
+    
+    transition: 200ms;
+}
+.link-item:hover:after{
+    width: 100%;
+    left: 0;
+}
+
+
+/*-------------Section Amazing Services--------*/
+
+
+.container{
+    margin: 0 auto;
+    padding: 0;
+    width: 1200px;
+}
+
+
+/*----------------Chapter-1---------------*/
+.chapter-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.chapter-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 300px;
+}
+.chapter-text h2{
+    font-size:30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.chapter-text span{
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    padding-bottom: 15px ;
+}
+
+.chapter-1 h2::after{  
+    content: '';
+    display: table;
+    clear: both;
+
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 0 auto;
+    margin-top: 40px;;
+}
+
+
+/*----------------Amazing-Service-----------*/
+
+.section-service {
+    margin: 0;
+}
+
+.service-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.service-item{
+    width: 320px;
+    position: relative;
+    list-style: none;
+    margin-left: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0;
+}
+
+.service-item:not( :nth-child(n + 3)){
+    margin-bottom: 100px;
+}
+
+
+.service-item h3{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.service-item p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #b3b3b3;
+}
+
+.service-item::before{
+    position: absolute;
+    right: 100%;
+
+    content: '';
+    display: block;
+
+    width: 80px;
+    height: 70px;
+
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+
+
+
+
+
+/*-----------------Icon--------------------------*/
+
+
+
+
+.alarm::before{
+    background-image: url('/img/icon/ALARM.png');
+}
+.line-graph::before{
+    background-image: url('../img/icon/LINE\ GRAPH.png');
+}
+.computer::before{
+    background-image: url('../img/icon/COMPUTER\ _\ OK.png');
+}
+.book::before{
+    background-image: url('../img/icon/BOOK2.png');
+}
+.home::before{
+    background-image: url('../img/icon/HOME.png');
+}
+
+.digital::before{
+    background-image: url('../img/icon/digital.png');
+}
+
+
+
+/*----------------------Section MEET OUR TEAM-----------------*/
+
+.section-team{
+    margin: 0;
+    padding-bottom: 85px;
+}
+
+.team-text{
+    margin: 0 auto;
+    padding-bottom: 95px;
+    width: 980px;
+    text-align: center;
+}
+.team-text p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #b3b3b3;
+}
+
+
+/*--------------------------------Team-Box------------------*/
+
+
+
+
+.team-box{
+    margin: 0;
+    padding-bottom: 82px;
+}
+.team-list{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-list img{
+    margin-bottom: 30px;
+    position: relative;
+    transform: translateX(0 0);
+    transition: linear 200ms;
+}
+
+.team-list img:hover {
+        transform: translate(-10px,-10px);  
+}
+
+.team-item h3{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+.team-item p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: #b3b3b3;
+}
+
+/*----------------Overlay---------------*/
+
+.team-item {
+    background-color: #95e1d3;
+    height: 470px;
+    position: relative;    
+}
+
+.overlay{
+    position: absolute;
+    z-index: 0;
+    width: 380px;
+    height: 470px;
+    background-color: salmon;
+    /*background: linear-gradient( rgba(243,129,129,0.5),rgba(252,227,138,0.5))*/
+}
+
+.team-item img:hover .overlay{    
+    z-index: 2;
+}
+
+.overlay-icon{
+    position: absolute;
+    width: 56px;
+    height: 56px; 
+}
+
+
+
+
+
+/*-----------------HR line---------------------*/
+
+.line{
+    margin: 0 auto;
+    width: 1200px;
+    height: 1px;
+}
+
+
+
+/*---------------------Footer------------------*/
+.section-footer{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-box{
+    min-height: 60px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-box span{
+    color: #f8bfbf;
+}
+
+.subscribe{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    
+}
+
+.subscribe input {
+    height: 40px;
+    
+}
+
+.subscribe input[type="text"]{
+    background: #fff;
+    width: 230px;
+    height: 36px;
+
+    outline: none;
+    padding: 0 12px; 
+    opacity: 0.5;
+
+    position: absolute;
+    right: 380px;
+}
+
+.subscribe input[type="submit"]{
+    color: #fff;
+    background-color: #95e1d3;
+    width: 160px;
+
+    position: relative;
+
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.subscribe input[type="submit"]:hover {
+    background-color: #45e2c5;
+}
