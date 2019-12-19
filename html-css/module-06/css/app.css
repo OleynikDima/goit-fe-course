@@ -207,7 +207,7 @@ html{
 
 
 .alarm::before{
-    background-image: url('/img/icon/ALARM.png');
+    background-image: url('../img/icon/ALARM.png');
 }
 .line-graph::before{
     background-image: url('../img/icon/LINE\ GRAPH.png');
