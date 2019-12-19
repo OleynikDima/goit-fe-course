@@ -34,7 +34,10 @@ html{
     color: #95e1d3;   
 }
 
+
 /*-------------Navigation------------*/
+
+
 .navigation-box{
     display: flex;
     justify-content: space-between;
@@ -86,6 +89,7 @@ html{
 /*-------------Section Amazing Services--------*/
 
 
+
 .container{
     margin: 0 auto;
     padding: 0;
@@ -94,6 +98,8 @@ html{
 
 
 /*----------------Chapter-1---------------*/
+
+
 .chapter-1{
     display: flex;
     justify-content: center;
@@ -129,6 +135,8 @@ html{
     margin: 0 auto;
     margin-top: 40px;;
 }
+
+
 
 
 /*----------------Amazing-Service-----------*/
@@ -193,7 +201,7 @@ html{
 
 
 
-/*-----------------Icon--------------------------*/
+/*---------------Amazing-Service--Icon--------------------------*/
 
 
 
@@ -221,6 +229,7 @@ html{
 
 
 /*----------------------Section MEET OUR TEAM-----------------*/
+
 
 .section-team{
     margin: 0;
@@ -251,22 +260,89 @@ html{
     padding-bottom: 82px;
 }
 .team-list{
-    text-align: center;
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
 
-.team-list img{
-    margin-bottom: 30px;
-    position: relative;
-    transform: translateX(0 0);
-    transition: linear 200ms;
+
+/*----------------Overlay--MAGIC------------------------------------*/
+
+.team-item {
+    background-color: #95e1d3;
+    height: 470px;    
 }
 
-.team-list img:hover {
-        transform: translate(-10px,-10px);  
+.overlay{
+    margin-bottom: 30px;
+    position: relative;
+    transition: linear 200ms;
+    width: 100%;
+    height: 100%;
+    background-color: salmon;
+    transition: linear 200ms;   
 }
+
+.overlay:hover{
+    transform: translate(-10px,-10px);       
+}
+
+
+.btn-overlay{
+    margin: 207px auto;
+    position: absolute;
+    display: none;
+    bottom: 0;
+    top: 0;
+    margin: auto; 
+    width: 100%;
+    height: 100%; 
+    background: linear-gradient( rgba(243,129,129,0.5),rgba(252,227,138,0.5));
+}
+.overlay:hover .btn-overlay{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.overlay-icon{
+    background-color: #fce38a;
+    border: none;
+    outline: none;
+    margin:1px;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    transition: linear 200ms;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.overlay-icon:hover {
+    background-color: #95e1d3;
+}
+
+
+/*-------------------------ICON---OVERLAY-----------------*/
+.facebook{
+    background-image: url('../img/icon/facebook.png');
+}
+.tweeter{
+    background-image: url('../img/icon/twitter.png');
+}
+.page{
+    background-image: url('../img/icon/pinterest.png');
+}
+.instagram{
+    background-image: url('../img/icon/instagram.png');
+}
+
+
+/*--------TEXT TEAM-LIST --------------------*/
+.team-item h3, .team-item p{
+    text-align: center;
+}
+
 
 .team-item h3{
     font-size: 14px;
@@ -282,48 +358,26 @@ html{
     color: #b3b3b3;
 }
 
-/*----------------Overlay---------------*/
-
-.team-item {
-    background-color: #95e1d3;
-    height: 470px;
-    position: relative;    
-}
-
-.overlay{
-    position: absolute;
-    z-index: 0;
-    width: 380px;
-    height: 470px;
-    background-color: salmon;
-    /*background: linear-gradient( rgba(243,129,129,0.5),rgba(252,227,138,0.5))*/
-}
-
-.team-item img:hover .overlay{    
-    z-index: 2;
-}
-
-.overlay-icon{
-    position: absolute;
-    width: 56px;
-    height: 56px; 
-}
-
-
 
 
 
 /*-----------------HR line---------------------*/
 
+
+
 .line{
+    opacity: 0.5;
     margin: 0 auto;
     width: 1200px;
-    height: 1px;
 }
 
 
 
 /*---------------------Footer------------------*/
+
+
+
+
 .section-footer{
     width: 1200px;
     margin: 0 auto;
@@ -358,7 +412,7 @@ html{
     background: #fff;
     width: 230px;
     height: 36px;
-
+    font-style: italic;
     outline: none;
     padding: 0 12px; 
     opacity: 0.5;
@@ -371,14 +425,14 @@ html{
     color: #fff;
     background-color: #95e1d3;
     width: 160px;
-
+    font-weight: 500;
     position: relative;
 
     border: none;
     outline: none;
 
     cursor: pointer;
-    transition: 200ms;
+    transition: linear 200ms;
 }
 
 .subscribe input[type="submit"]:hover {
