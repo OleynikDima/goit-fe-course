@@ -41,7 +41,7 @@ html{
 .navigation-box{
     display: flex;
     justify-content: space-between;
-    width: 491px;
+    min-width: 491px;
 }
 
 .navigation-item {
@@ -100,31 +100,23 @@ html{
 /*----------------Chapter-1---------------*/
 
 
-.chapter-1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px;
-}
 
-.chapter-text{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 300px;
-}
-.chapter-text h2{
+.chapter-1{
+    margin: 110px auto 66px;
+    text-align: center;
     font-size:30px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
-.chapter-text span{
+.chapter-1 span{
+    display: block;
     font-size: 24px;
+    font-weight: 300;
     font-family: 'Kaushan Script', cursive;
     padding-bottom: 15px ;
 }
 
-.chapter-1 h2::after{  
+.chapter-1::after{  
     content: '';
     display: table;
     clear: both;
@@ -257,7 +249,7 @@ html{
 
 .team-box{
     margin: 0;
-    padding-bottom: 82px;
+  
 }
 .team-list{
     list-style: none;
@@ -268,23 +260,20 @@ html{
 
 /*----------------Overlay--MAGIC------------------------------------*/
 
-.team-item {
-    background-color: #95e1d3;
-    height: 470px;    
-}
 
 .overlay{
     margin-bottom: 30px;
     position: relative;
-    transition: linear 200ms;
     width: 100%;
-    height: 100%;
-    background-color: salmon;
     transition: linear 200ms;   
+    font-size: 0;
 }
 
-.overlay:hover{
-    transform: translate(-10px,-10px);       
+
+
+.team-item:hover .overlay{
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 0  rgba(149, 255, 211, 1);
 }
 
 
@@ -360,19 +349,6 @@ html{
 
 
 
-
-/*-----------------HR line---------------------*/
-
-
-
-.line{
-    opacity: 0.5;
-    margin: 0 auto;
-    width: 1200px;
-}
-
-
-
 /*---------------------Footer------------------*/
 
 
@@ -389,6 +365,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 1px solid #b3b3b3;
 }
 
 .footer-box span{
@@ -396,7 +373,7 @@ html{
 }
 
 .subscribe{
-    font-size: 14px;
+    font-size: 0;
     margin: 0;
     padding: 0;
     height: 40px;
@@ -416,9 +393,10 @@ html{
     outline: none;
     padding: 0 12px; 
     opacity: 0.5;
+    
+   
 
-    position: absolute;
-    right: 470px;
+    
 }
 
 .subscribe input[type="submit"]{
@@ -431,7 +409,6 @@ html{
     border: none;
     outline: none;
 
-    cursor: pointer;
     transition: linear 200ms;
 }
 
