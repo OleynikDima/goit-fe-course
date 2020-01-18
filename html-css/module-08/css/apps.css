@@ -165,7 +165,7 @@ body{
 }
 
 
-@media screen and (max-width:375px){
+@media (max-width:375px){
     main{
         padding-right: 21px;
         padding-left: 21px;
