@@ -1,8 +1,26 @@
 @font-face{
     font-family: 'Montserrat';
-    font-weight: normal;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 14px;
     src: url('../fonts/montserrat.woff');
+}
+@font-face{
+    font-family: 'Montserrat Bold';
+    font-weight: 700;
+    font-size: 14px;
+    src: url('../fonts/montserratbold.woff');
+}
+@font-face{
+    font-family: 'Roboto Light';
+    font-weight: 300;
+    font-size: 14px;
+    src: url('../fonts/Robotolight.woff');
+}
+@font-face{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    src: url('../fonts/Roboto.woff');
 }
 html{
     box-sizing: border-box;
@@ -11,6 +29,8 @@ html{
 *,
 *::after,
 *::before{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body{
@@ -19,14 +39,13 @@ body{
     background-position: top;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat';
 }
 
 
 /*----Header----*/
 .site-header{
     margin: 0 auto;
-    width: 66%;
+    width: 940px;
     height: 75px;
     display: flex;
     justify-content: space-between;
@@ -34,6 +53,7 @@ body{
 }
 
 .site-logo{
+    font-family: 'Montserrat Bold';
     margin: 0;
     color: azure;
     font-size:20px;
@@ -41,7 +61,7 @@ body{
 }
 
 .header-button {
-    font-weight: 500;
+    font-family: 'Montserrat Bold';
     font-size: 14px;
     color: #ffffff;
     width: 90px;
@@ -62,7 +82,7 @@ body{
 
 .main{
     margin: 0 auto;
-    width: 66%;
+    width: 940px;
     padding-bottom: 70px;
 }
 
@@ -83,10 +103,14 @@ body{
     text-align: center;
 }
 */
-.section-box-h2{
+.section-box{
     margin: 0 auto;
+    width: 500px;
+    font-family: 'Montserrat Bold';
+}
+.section-box-h2{
+    margin: 0;
     padding-bottom: 40px;
-    width: 480px;
     font-size: 52px;
     color: #ffffff;
 }
@@ -95,14 +119,14 @@ body{
     padding-bottom: 34px;
     color: #ffffff;
     font-size: 24px;
-    font-weight: 100;
-    font-family: 'Roboto';
+    font-family: 'Roboto Light';
 }
 
 .section-main-button{
     padding: 12px 25px;
     color: #ffffff;
     font-size: 14px;
+    font-family: 'Montserrat Bold';
     cursor: pointer;
     border: none;
     border-radius: 25px;
@@ -120,9 +144,13 @@ body{
 .section-meet{
     padding-top: 72px;
 }
-
+.section-meet-container{
+    margin-bottom: 40px;
+}
 
 .section-meet-container h2{
+    font-family: 'Montserrat Bold';
+    font-size: 22px;
     padding-bottom: 32px;
     margin: 0;
     text-align: center;
@@ -140,17 +168,25 @@ body{
 }
 
 .meet-item{
+    font-family: 'Montserrat Bold';
     list-style: none;
     text-align: center;
-    width: 200px;
+    width: 220px;
+}
+.meet-item img, .meet-item h3{
+    margin-bottom: 20px;
+}
+
+.meet-item p{
+    font-family: 'Roboto Light';
 }
 
 .section-meet-btn{
-    padding-top: 40px;
     text-align: center;
 }
 .meet-block-button{
     padding: 12px 27px;
+    font-family: 'Montserrat Bold';
     font-size: 14px;
     cursor: pointer;
     outline: none;
@@ -163,58 +199,6 @@ body{
 .meet-block-button:hover{
     color: #ffffff;
     background-color:#ff4e50 ;
-    font-size: 16px;
 }
 
-
-@media (max-width:320px){
-    body{
-        background-size: 400%;
-    }
-    .site-header{
-        width: 86%;
-        padding-top: 20px;
-    }
-    .main{
-        width: 86%;
-    }
-    .site-header{
-        height: 170px;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .meet-box{
-        flex-direction: column;
-        align-items: center;
-    }
-    .section-box-h2{
-        font-size: 30px;
-        width: 95%;
-    }
-    .section-meet-container h2{
-        width: 86%;
-        margin: 0 auto;
-    }
-    .section-meet-container{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .mian-padding{
-        padding-top: 40px;
-        padding-bottom: 140px;
-    }
-    .meet-block-button{
-        padding-left: 73px;
-        padding-right: 73px;
-    }
-    .img-3{
-        order: 0;
-    }
-    .img-2{
-        order: 1;
-    }
-    .img-4{
-        order: 1;
-    }
-}
 

@@ -1,6 +1,95 @@
-@media screen and (max-width:320px){
-    .site-logo{
+
+@media (max-width:320px){
+    body{
+        background-size: 400%;
+    }
+    .site-header{
+        width: 86%;
+        padding-top: 20px;
+    }
+    .main{
+        width: 86%;
+    }
+    .site-header{
+        height: 170px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .meet-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .meet-item:not(:last-child):nth-child(n) {
+        margin-bottom: 24px;
+    }
+    .section-box{
+        width: 285px;
+    }
+    .section-box-h2{
+        font-size: 30px;
+        width: 285px;
+    }
+    .section-meet-container h2{
+        width: 86%;
+        margin: 0 auto;
+    }
+    .section-meet-container{
+        margin-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .mian-padding{
+        padding-top: 40px;
+        padding-bottom: 140px;
+    }
+    .meet-block-button{
+        padding-left: 69px;
+        padding-right: 69px;
+    }
+    .img-3{
+        order: 0;
+    }
+    .img-2{
+        order: 1;
+    }
+    .img-4{
+        order: 1;
+    }
+}
+
+
+@media screen and (min-width:376px)  and (max-width:768px){
+ 
+    .site-header{
+        width: 87.2%;
+        padding-top: 48px;  
+    }
+    .main{
+        margin: 0 auto; 
+        width: 64%;
+    }
+
+    .section-box-h2{
+        font-size: 52px;
+    }
+    .section-meet-container h2{
+        margin: 0 auto;
+    }
+    .section-meet-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .mian-padding{
+        padding-top: 122px;
+        padding-bottom: 235px;
+    }
+    .meet-box{
+        flex-wrap: wrap;
+    }
+    .meet-block-button{
         margin: 0 auto;
     }
 
+  
 }
+    
