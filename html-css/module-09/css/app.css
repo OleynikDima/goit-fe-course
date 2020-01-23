@@ -1,0 +1,8 @@
+.img-bg{
+    background-image: url('/img/bg2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.btn-header-sing{
+    border-radius: 20px;
+}

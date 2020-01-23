@@ -34,113 +34,92 @@ html{
     box-sizing: border-box;
 }
 body{
+    margin: 0;
+    padding: 0;
+}
+.body_bg_img{
     background-image: url('../img/bg3.png');
     background-repeat: no-repeat;
     background-position: top;
-    margin: 0;
-    padding: 0;
 }
-
 
 /*----Header----*/
+
 .site-header{
+    max-width: 940px;
+    padding:50px 20px 0;
     margin: 0 auto;
-    width: 940px;
-    height: 75px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
 }
-
 .site-logo{
+    color: #ffffff;
     font-family: 'Montserrat Bold';
-    margin: 0;
-    color: azure;
-    font-size:20px;
+    font-size: 20px;
+    font-weight: bold;
     text-decoration: none;
 }
-
-.header-button {
-    font-family: 'Montserrat Bold';
-    font-size: 14px;
-    color: #ffffff;
-    width: 90px;
-    height: 36px;
-    background-color: transparent;
-    border: 2px solid transparent;
-    outline: none;
-    border-radius: 25px;
-    transition: linear 200ms;
-    cursor: pointer;
-}
-.header-button:hover{
-    border: 2px solid #ffffff;
-}
-
-
-/*-------MAIN------*/
-
-.main{
-    margin: 0 auto;
-    width: 940px;
-    padding-bottom: 70px;
-}
-
-.mian-padding{
-    padding-top: 142px;
-    padding-bottom: 218px;
-}
-
 .section-main{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
-/*.section-box{
-    margin: 0;
-    padding: 0;
-    padding-top: 150px;
-    text-align: center;
+.mian-padding{
+    padding: 180px 0;
 }
-*/
-.section-box{
-    margin: 0 auto;
-    width: 500px;
+.header-button{
+    color: #ffffff;
     font-family: 'Montserrat Bold';
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid #ffffff00;    
+    cursor: pointer;
+    transition: linear 200ms;
 }
-.section-box-h2{
-    margin: 0;
-    padding-bottom: 40px;
-    font-size: 52px;
-    color: #ffffff;
-}
-.section-box-text{
-    margin: 0;
-    padding-bottom: 34px;
-    color: #ffffff;
-    font-size: 24px;
-    font-family: 'Roboto Light';
+.header-button:hover{
+    border: 2px solid #ffffff; 
 }
 
-.section-main-button{
-    padding: 12px 25px;
-    color: #ffffff;
-    font-size: 14px;
+.section-box-h2{
     font-family: 'Montserrat Bold';
-    cursor: pointer;
-    border: none;
+    font-size: 52px;
+    color: #ffffff;
+    padding-bottom: 40px;
+}
+.section-box-text{
+    font-family: 'Roboto Light';
+    font-weight: 300;
+    font-size: 24px;
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+.section-main-button{
+    background-color: #ff4e50;
+    font-family: 'Montserrat Bold';
+    font-size: 14px;
+    padding: 14px 22px;
     border-radius: 25px;
+    border: 1px solid #ff4e5100;
     outline: none;
-    background: #ff4e5171;
+    color: #ffffff;
+    cursor: pointer;
     transition: linear 200ms;
 }
 .section-main-button:hover{
-    background-color:#ff4e50;
+    border: 1px solid #ff4e51;
+    background-color: #ff4e5160;
+    color:#ffffff;
 }
-
-
+/*-------MAIN------*/
 /*---------SEction0Meet-----------*/
-
+.main{
+    max-width: 940px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
 .section-meet{
     padding-top: 72px;
 }
@@ -171,7 +150,7 @@ body{
     font-family: 'Montserrat Bold';
     list-style: none;
     text-align: center;
-    width: 220px;
+    width: 23.5%;
 }
 .meet-item img, .meet-item h3{
     margin-bottom: 20px;
@@ -179,6 +158,8 @@ body{
 
 .meet-item p{
     font-family: 'Roboto Light';
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .section-meet-btn{
