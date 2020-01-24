@@ -1,0 +1,10 @@
+@media (max-width:320px){
+    .header-chapter{
+        color: #ffffff;
+        font-size: 30px;
+    }
+    .container-text{
+        padding-top: 40px;
+        text-align: center;
+    }
+}

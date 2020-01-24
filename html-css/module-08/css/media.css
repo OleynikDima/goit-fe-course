@@ -63,10 +63,10 @@
         display: flex;
         justify-content: space-between;
         width: 87.2%;
+        padding: 0;
         padding-top: 48px;  
     }
     .main{
-        margin: 0 auto; 
         width: 64%;
     }
 
@@ -84,11 +84,21 @@
         padding-top: 122px;
         padding-bottom: 235px;
     }
-    .meet-box{
+    
+    .meet-box { 
+        align-items: center;
         flex-wrap: wrap;
     }
     .meet-item{
-        width: 50%;
+        width: 43%;
+    }
+    .meet-item:nth-child(1),
+    .meet-item:nth-child(2){
+        margin-bottom: 58px;
+    }
+
+    .meet-item:nth-child(n + 1){
+        margin-right: 20px;
     }
     .meet-block-button{
         margin: 0 auto;
