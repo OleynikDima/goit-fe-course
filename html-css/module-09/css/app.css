@@ -1,9 +1,37 @@
+@font-face{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    src: url('../fonts/montserrat.woff');
+}
+@font-face{
+    font-family: 'Montserrat Bold';
+    font-weight: 700;
+    font-size: 14px;
+    src: url('../fonts/montserratbold.woff');
+}
+@font-face{
+    font-family: 'Roboto Light';
+    font-weight: 300;
+    font-size: 14px;
+    src: url('../fonts/Robotolight.woff');
+}
+@font-face{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    src: url('../fonts/Roboto.woff');
+}
+
+
 .img-bg{
     background-image: url('/img/bg3.png');
     background-repeat: no-repeat;
     background-position: center;
 }
 .sing{
+    font-size: 14px;
+    font-family: 'Montserrat Bold';
     border-radius: 25px;
 }
 .sweet-people{
@@ -11,32 +39,64 @@
     max-width: 940px;
     height: 700px;
 }
-.container-text{
-    text-align: center;
-}
+
+
 .logo{
-    padding-top: 130px;
+    padding-top: 140px;
 }
+
+
 .header-logo{
-    font-size: 30px;
+    font-family: 'Montserrat Bold';
+    color:#ffffff;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
 }
+
 .header-chapter{
+    text-align: center;
     color: #ffffff;
+    margin-bottom: 16px;
+    line-height: 34px;
     font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat Bold';
 }
+
 .header-text{
+    padding: 0 42px;
+    line-height: 18px;
     font-size: 18px;
     color: #ffffff;
     font-family: 'Roboto Light';
     font-weight: 100;
 }
+
 .section-Chapter{
     padding-top: 70px;
     text-align: center;
+    font-family: 'Montserrat Bold';
     font-size: 22px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 28 px;
 }
-.txt-center{
-    text-align: center;
+
+
+.partner-img{
+    margin-bottom: 16px;
+}
+.partner-name{
+    font-family: 'Montserrat Bold';
+    font-weight: 700;
+    font-size: 14px;
+}
+.partner-text{
+    margin: 0;
+    color: #8f8f8f;
+    font-family: 'Roboto Light';
+    font-size: 14px;
 }
 .section-comtainer{
     padding-bottom: 70px;
