@@ -86,16 +86,26 @@
     color:#ffffff;
 }
 
-.logo-site {
+.logo-site,
+.btn_border,
+.nav-link,
+.section-title,
+.holder-services_subtitle,
+.holder-services_name,
+.section_team-box__item h3,
+.footer__box--tex,
+.footer__box--subscribe input[type="submit"] {
     font-family:'Montserrat';
+}
+
+.logo-site {    
     font-weight: bold;
     font-size: 30px;
     line-height: 32px;
 }
 
-
 .btn_border{
-    font-family:'Montserrat';
+   
     font-weight: bold;
     font-size: 14px;
     padding: 10px 30px;
@@ -113,7 +123,7 @@
     padding-bottom: 42px;
 }
 .header-site_title {
-    font-family:'Montserrat';
+   
     font-weight: bold;
     font-size: 150px;
     line-height: 140px;
@@ -138,8 +148,7 @@
     font-size: 24px;
     padding-top: 48px; 
 }
-.section-title {
-    font-family:'Montserrat';
+.section-title {   
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 45px;
@@ -157,7 +166,6 @@
 }
 
 .holder-services_subtitle {
-    font-family:'Montserrat';
     font-weight: 400;
     font-size: 14px;
     color: #333333;
@@ -203,7 +211,6 @@
 
 
 .holder-services_name{
-    font-family:'Montserrat';
     font-size: 14px;
 }
 
@@ -246,9 +253,9 @@
 
 
 .section_team-box{
-    margin: 0 auto;
-  
+    margin: 0 auto; 
 }
+
 .section_team-box__list{
     margin: 0 auto;
     padding: 0;
@@ -272,29 +279,21 @@
     font-size: 0;
 }
 
-
-
 .section_team-box__item:hover .section_team--overlay{
     transform: translate(-10px, -10px);
     box-shadow: 10px 10px 0  rgba(149, 255, 211, 1);
 }
 
-
-.section_team--overlay__btn{
-    
+.section_team--overlay__btn{    
     position: absolute;
     top: 0;
     bottom: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     opacity: 0;
-
     width: 100%;
     height: 100%; 
-
     background: linear-gradient( rgba(243,129,129,0.5),rgba(252,227,138,0.5));
     transition: linear 200ms;
 }
@@ -320,7 +319,6 @@
     background-color: #f38181;
 }
 
-
 .overlay-icon__svg{
     display: block;
     width: 28px;
@@ -339,10 +337,8 @@
     text-align: center;
 }
 
-
 .section_team-box__item h3{
     font-size: 14px;
-    font-family: 'Montserrat';
     font-weight: 500;
 }
 
@@ -366,16 +362,12 @@
     position: absolute;
     top: 0;
     bottom: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     opacity: 0;
-
     width: 100%;
     height: 100%; 
-
     background: linear-gradient( rgba(243,129,129,0.5),rgba(252,227,138,0.5));
     transition: linear 200ms;
 }
@@ -412,7 +404,6 @@
     border-top: 1px solid #b3b3b3;
 }
 .footer__box--text{
-    font-family: 'Montserrat';
     font-size: 14px;
     display: flex;
 }
@@ -443,24 +434,27 @@
 .footer__box--subscribe input[type="submit"]{
     color: #fff;
     background-color: #95e1d3;
-    font-family:'Montserrat';
     font-weight: bold;
     font-size: 14px;
     line-height: 12px;
-
     width: 150px;
     height: 38px; 
     position: relative;
     top: 0;
     left: -5px;
-
     border: none;
     outline: none;
-
     transition: linear 200ms;
     cursor: pointer;
 }
 
 .footer__box--subscribe__hover input[type="submit"]:hover {
     background-color: #45e2c5;
+}
+
+@media (min-resolution: 192dpi), (min-resolution:2dppx) {
+    .header-site_bg {
+        background-image: url('../img/bg/Layer\ 15@2x.png');
+        
+    }
 }
