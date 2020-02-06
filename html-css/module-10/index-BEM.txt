@@ -1,0 +1,53 @@
+page-header 
+list
+    page-header__back-img
+page-navigation
+
+
+site-logo
+  site-logo__text
+
+page-header__navigation-box
+
+site-navigation
+    site-navigation__item
+    site-navigation__link
+      site-navigation__link--icon
+
+header-charge      
+   header-charge__text-creative
+   header-charge__title
+   header-charge__btn
+
+section
+
+list
+
+services
+   section__title
+   service__item
+   service__icon
+       service__icon--tools
+
+wrappew-team
+    wrapper-team__tex
+team
+
+    team__list
+    team__item
+    team__item-img
+    team__item-overlay
+    item-overlay__btn
+    item-overlay__btn-icon
+        item-overlay__btn-icon--tools
+        item-overlay__btn-svg
+
+    team__item-name
+    team__item-profession
+
+footer
+   footer__wrapper
+   footer__wrapper-text
+   footer__form
+   footer__form-email
+   footer__form-btn
