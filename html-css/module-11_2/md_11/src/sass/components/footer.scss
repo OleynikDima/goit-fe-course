@@ -1,0 +1,50 @@
+
+.footer__wrapper{
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #b3b3b3;
+        &-text {
+            font-family: $page-font-Montserrat;
+            font-weight: 400;
+            font-size: 14px;
+            color: #808080;
+                &--pink {
+                    color: #f8bfbf;
+                }
+            }
+}
+
+.footer__form{
+    font-size: 0;
+    height: 40px;    
+        &-email[type="text"]{
+            background:$primary-color;
+            width: 230px;
+            height: 38px;
+            font-style: italic;
+            outline: none;
+            padding: 0 12px; 
+            opacity: 0.5;
+            font-size: 15px;
+        }
+        &-btn[type="submit"]{
+            color:$primary-color;
+            background-color: #95e1d3;
+            font-weight: bold;
+            font-size: 14px;
+            position: relative;
+            top: -1px;
+            left:-1px;
+            border: none;
+            outline: none;
+            transition: linear 200ms;
+            cursor: pointer;
+            font-family: $page-font-Montserrat;
+            padding:11px 35px;
+                &:hover {
+                    background-color: #45e2c5;
+                }
+        }
+}

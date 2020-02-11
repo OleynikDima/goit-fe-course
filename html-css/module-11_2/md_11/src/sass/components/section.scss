@@ -1,0 +1,25 @@
+.section__title {
+    margin: 45px auto 66px;
+    text-align: center;
+    font-size:30px;
+    font-family: $page-font-Montserrat;
+    font-weight: 600;
+     /*--------title----------- */
+            &::after {  
+                content: '';
+                display: table;
+                clear: both;
+                width: 60px;
+                height: 3px;
+                background-color: $primery-color-underline-title;
+                margin: 40px auto 0;
+            }
+    & span {
+        display: block;
+        font-size: 24px;
+        font-weight: 300;
+        font-family: $header-decoretext-Kaushan;
+        padding-bottom: 15px;
+    }
+}
+

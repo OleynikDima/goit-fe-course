@@ -1,0 +1,12 @@
+.wrapper-team{
+    margin: 0 auto;
+    padding-bottom: 92px;
+    width: 980px;
+    text-align: center;
+        &__tex{
+            font-family: $text-color-describe;
+            font-size: 15px;
+            font-weight: 300;
+            color: $primery-gray-color-describe;
+        }
+}

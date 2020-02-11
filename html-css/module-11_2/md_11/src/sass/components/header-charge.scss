@@ -1,0 +1,44 @@
+.header-charge {
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;   
+    padding-top: 150px;
+        &__text-creative,
+        &__title,
+        &__btn {
+            color: $primary-color;
+        }
+        &__title,
+        &__btn {
+            font-family: $page-font-Montserrat;   
+        }
+        &__text-creative {
+            font-family: $header-decoretext-Kaushan;
+            font-weight: 400;
+            font-size:72px;
+            padding-bottom: 40px;
+        }
+        &__title {
+            margin: 0;
+            font-weight: bold;
+            font-size: 150px;
+            line-height: 130px;
+            padding-bottom: 140px;
+        }
+        &__btn {
+            font-weight: bold;
+            font-size:14px;
+            margin: 0;
+            padding:12px 30px;
+            border: 3px solid $primary-color;
+            outline: none;
+            background: transparent;
+            cursor: pointer;
+            transition: linear 200ms;
+                &:hover {
+                    background-color:$primary-color;
+                    color: $primary-accent-color;
+                }
+        }
+}
+

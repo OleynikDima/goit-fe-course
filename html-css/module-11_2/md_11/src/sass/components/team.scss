@@ -1,0 +1,99 @@
+.team{
+    padding-bottom: 85px;
+    &__list{
+        padding: 0;
+        list-style: none;
+    }
+    &__item {
+        margin-right: 20px;
+        text-align: center;
+/*--------TEXT TEAM-LIST --------------------*/
+
+            &-name{
+                font-size: 14px;
+                font-family: $page-font-Montserrat;
+                font-weight: 400;
+                padding-bottom: 15px;
+            }
+            &-profession{
+                font-family: $text-color-describe;
+                font-size: 15px;
+                font-weight: 200;
+                font-style: italic;
+                color: $primery-gray-color-describe;
+            }
+            &-overlay{
+                margin-bottom: 30px;
+                position: relative;
+                width: 100%;
+                transition: linear 200ms;   
+                font-size: 0;
+
+                    &:hover .item-overlay__btn{  
+                        opacity: 1;
+                        }
+            }
+            &:hover .team__item-overlay{
+                transform: translate(-10px, -10px);
+                box-shadow: 10px 10px 0  rgba(149, 255, 211, 1);
+            }
+        }
+}
+            
+.item-overlay__btn{            
+    position: absolute;
+    top: 0;
+    bottom: 0;      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    width: 100%;
+    height: 100%; 
+    background: linear-gradient( rgba(243,129,129,0.5),rgba(252,227,138,0.5));
+    transition: linear 200ms;
+/*--------------------ICON---OVERLAY-----------------*/
+        &-icon{
+            background-color: $primary-accent-color;
+            border: none;
+            outline: none;
+            margin:1px;
+            width: 55px;
+            height: 55px;
+            cursor: pointer;
+            transition: linear 200ms;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                &:hover {
+                    background-color: $primery-color-underline-title;
+                        & .item-overlay__btn-svg {
+                            fill:$primary-color;
+                        }
+                }
+        }
+        &-svg{
+            display: block;
+            width: 28px;
+            height: 56px;
+            fill: $primery-color-underline-title;
+        }
+}
+            
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+

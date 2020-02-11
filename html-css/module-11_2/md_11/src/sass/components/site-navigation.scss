@@ -1,0 +1,54 @@
+.page-header__navigation-box {
+    min-width: 491px;
+}
+
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+        &__item {
+            list-style: none;
+            position: relative;
+        }
+        &__link {
+            text-decoration: none;
+            font-family: $page-font-Montserrat;
+            font-weight: 400;
+            font-size: 14px;
+            color:$primary-color;
+            transition: 200ms;
+                &:hover {
+                    color:$primary-accent-color;
+                        &:after{
+                            width: 100%;
+                            left: 0;
+                        }
+                }
+                 &::after {
+                    content: '';
+                    display: table;
+                    clear: both;
+                    position: absolute;
+                    top: 150%;
+                    right: 0;
+                    width: 0;
+                    height: 3px;
+                    background-color: $primary-accent-color;
+                    transition: 200ms;
+                 }
+                 &--icon{
+                     display: inline-block;
+                     width: 18px;
+                     height: 18px;
+                     fill: $primary-color;
+                        &:hover {
+                            fill: $primary-accent-color;
+                        }
+                    }
+        }
+}
+
+
+
+
+

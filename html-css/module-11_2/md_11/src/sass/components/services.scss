@@ -1,0 +1,62 @@
+
+.service__list {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.service__item {
+    width: 320px;
+    position: relative;
+    list-style: none;
+    margin-left: 80px;
+    font-family: $page-font-Montserrat;
+    font-size: 0;
+        &:not( :nth-child(n + 3)){
+            margin-bottom: 100px;
+        }
+        &-title {
+            font-size: 14px;
+            font-family: $page-font-Montserrat;
+            font-weight: 200;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        &-text {
+            font-family:$text-color-describe;
+            font-size: 15px;
+            color: $primery-gray-color-describe;
+        }
+}
+
+.service__icon::before {
+    position: absolute;
+    right: 100%;
+    content: '';
+    display: block;
+    width: 80px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+           .service__icon--alarm::before{
+                background-image: url('../images/icon-services/ALARM.png');
+            }
+            .service__icon--line-graph::before{
+                background-image: url('../images/icon-services/LINE\ GRAPH.png');
+            }
+            .service__icon--computer::before{
+                background-image: url('../images/icon-services/COMPUTER\ _\ OK.png');
+            }
+            .service__icon--book::before{
+                background-image: url('../images/icon-services/BOOK2.png');
+            }
+            .service__icon--home::before{
+                background-image: url('../images/icon-services/HOME.png');
+            }
+            
+            .service__icon--digital::before{
+                background-image: url('../images/icon-services/digital.png');
+            }
+
+
